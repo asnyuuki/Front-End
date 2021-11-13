@@ -1,0 +1,475 @@
+/* DARK MODE */
+:root {
+    --primary-color: #fff;
+    --secondary-color: #000;
+    --tertiary-color: #FF9100;
+    --quaternary-color: rgb(206, 206, 206, 0.5);
+}
+
+.dark-theme {
+    --primary-color: #000;
+    --secondary-color: #fff;
+    --tertiary-color: #fff;
+    --quaternary-color: rgb(127, 126, 126, 0.5);
+}
+
+/* AKHIR DARK MODE */
+body {
+    background: var(--primary-color);
+}
+
+/* HOME */
+.header {
+    position: relative;
+    width: 1080px;
+    margin-bottom: 0px;
+
+}
+
+.background-header {
+    position: absolute;
+    right: 0px;
+    width: 67%;
+}
+
+/* TOGGLE DARK MODE */
+#icon {
+    width: 5;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    cursor: pointer;
+}
+
+#icon:hover {
+    background: #ff9100;
+    border-radius: 10px;
+}
+
+/* AKHIR TOGGLE DARK MODE */
+
+.title {
+    color: var(--secondary-color);
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    font-size: 101px;
+    letter-spacing: 50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 605;
+}
+
+/* NAV BUTTON */
+.nav {
+    position: absolute;
+    left: 117px;
+    bottom: 113px;
+    list-style-type: none;
+    display: inline-flex;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.home {
+    padding: 0.1rem 0.2rem;
+}
+
+a.home {
+    text-decoration: none;
+    color: #ff9100;
+}
+
+a.home:hover {
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.gallery {
+    padding: 0.1rem 0.2rem;
+    margin-left: 80px;
+}
+
+a.gallery {
+    text-decoration: none;
+    color: #ff9100;
+}
+
+a.gallery:hover {
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+.contact_me {
+    padding: 0.1rem 0.2rem;
+    margin-left: 80px;
+}
+
+a.contact_me {
+    text-decoration: none;
+    color: #ff9100;
+
+}
+
+a.contact_me:hover {
+    color: var(--secondary-color);
+    border-radius: 5px;
+}
+
+/* AKHIR NAV BUTTON */
+/* AKHIR HOME */
+/* GALLERY */
+.component1 {
+    position: absolute;
+    left: -10px;
+    top: 100%;
+    margin-top: -10px;
+    width: 476.18px;
+    height: 145.31px;
+}
+
+.gall-sec {
+    color: var(--secondary-color);
+    position: absolute;
+    writing-mode: sideways-lr;
+    transform: rotate(270deg);
+    top: 100%;
+    margin-top: 300px;
+    margin-left: -60px;
+    font-size: 61px;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 15px;
+}
+
+.sidebar {
+    position: absolute;
+    top: 100%;
+    right: 45px;
+    height: 100%;
+}
+
+/* SIDEBAR */
+.sidebar1 {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 92.8px;
+    width: 4.5%;
+}
+
+.sidebar1:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar2 {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 439px;
+    width: 4.5%;
+}
+
+.sidebar2:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar3 {
+    position: absolute;
+    top: 100%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 805px;
+    width: 4.5%;
+}
+
+.sidebar3:hover {
+    background-color: var(--primary-color);
+}
+
+/* AKHIR SIDEBAR */
+/* CAROUSEL */
+.image {
+    width: 67%;
+    position: absolute;
+    top: 100%;
+    margin-top: 106px;
+    left: 17vw;
+    border-radius: 25px;
+}
+
+.dash {
+    margin-bottom: 7px;
+}
+
+.judul {
+    color: var(--secondary-color);
+    text-shadow: 2px 2px 2px rgb(0, 0, 0, 0.5);
+    position: absolute;
+    top: 100%;
+    margin-top: 604px;
+    margin-left: 263px;
+    letter-spacing: 7px;
+    font-size: 1.5vmax;
+    font-weight: bold;
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+}
+
+.keterangan {
+    background: var(--quaternary-color);
+    border-radius: 15px;
+    color: var(--secondary-color);
+    font-family: Segoe UI, 'Tahoma', Geneva, Verdana, sans-serif;
+    font-size: 1.2vmax;
+    position: absolute;
+    top: 100%;
+    margin-top: 654px;
+    margin-left: 233px;
+    padding: 1rem 1rem;
+    text-align: justify;
+    width: 50vmax;
+    height: 10vmax;
+}
+
+.mySlides {
+    display: none;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 145%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: var(--secondary-color);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 14%;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 15%;
+}
+
+.prev:hover,
+.next:hover {
+    color: #FF9100;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    position: relative;
+    top: 100%;
+    margin-left: 15px;
+    margin-top: 1901px;
+    left: 114px;
+    background-color: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Fading animation */
+.fade {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+
+    .prev,
+    .next,
+    .text {
+        font-size: 11px
+    }
+}
+
+/* AKHIR CAROUSEL */
+/* AKHIR GALLERY */
+/* CONTACT ME */
+.cme-sec {
+    color: var(--secondary-color);
+    position: absolute;
+    writing-mode: sideways-lr;
+    transform: rotate(270deg);
+    top: 200%;
+    left: -80px;
+    margin-top: 327px;
+    margin-left: -60px;
+    font-size: 61px;
+    font-family: 'Tahoma', Geneva, Verdana, sans-serif;
+    font-weight: lighter;
+    letter-spacing: 15px;
+}
+
+.sidebar01 {
+    position: absolute;
+    top: 200%;
+    right: 45px;
+    height: 100%;
+}
+
+.component2 {
+    position: absolute;
+    right: 134.7px;
+    top: 200%;
+    margin-top: -27px;
+    width: 476.18px;
+    height: 145.31px;
+}
+
+.component3 {
+    position: absolute;
+    top: 200%;
+    margin-top: 870.24px;
+    margin-left: -110px;
+    margin-bottom: 0px;
+    left: 0px;
+    bottom: 0px;
+    width: 476.18px;
+    height: 145.31px;
+}
+
+.uname {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 200%;
+    margin-top: 387.5px;
+    left: 45%;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.uname0 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 200%;
+    left: 40%;
+    margin-top: 579.5px;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.uname1 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 22px;
+    position: absolute;
+    top: 200%;
+    left: 40.5%;
+    margin-top: 800.5px;
+    color: var(--tertiary-color);
+    font-weight: bold;
+}
+
+.ig {
+    position: absolute;
+    top: 200%;
+    margin-top: 284px;
+    left: 46%;
+    width: 5%;
+}
+
+.linkedin {
+    position: absolute;
+    top: 200%;
+    margin-top: 476px;
+    left: 46%;
+    width: 5%;
+}
+
+.location {
+    position: absolute;
+    top: 200%;
+    margin-top: 691px;
+    left: 46.5%;
+    width: 4%;
+}
+
+/* SIDEBAR */
+.sidebar11 {
+    position: absolute;
+    top: 200%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 92.8px;
+    width: 4.5%;
+}
+
+.sidebar11:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar21 {
+    position: absolute;
+    top: 200%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 439px;
+    width: 4.5%;
+}
+
+.sidebar21:hover {
+    background-color: var(--primary-color);
+}
+
+.sidebar31 {
+    position: absolute;
+    top: 200%;
+    right: 0%;
+    margin-right: 43.6px;
+    margin-top: 805px;
+    width: 4.5%;
+}
+
+.sidebar31:hover {
+    background-color: var(--primary-color);
+}
+
+/* AKHIR SIDEBAR */
+/* AKHIR CONTACT ME */

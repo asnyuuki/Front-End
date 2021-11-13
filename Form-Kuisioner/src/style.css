@@ -1,0 +1,11 @@
+html,
+body {
+    max-width: 1920px;
+    width: 100%;
+    background-color: white;
+}
+
+svg {
+    position: absolute;
+    top: 0px;
+}
