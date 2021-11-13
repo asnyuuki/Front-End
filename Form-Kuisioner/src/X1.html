@@ -6,6 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>X1</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="jquery-latest.min.js"></script>
+    <script>
+      $(function () {
+        $(".checkme").click(function (event) {
+          var x = $(this).is(":checked");
+          if (x == true) {
+            $(this).parents(".checkbox-card").find(".ket").show();
+          } else {
+            $(this).parents(".checkbox-card").find(".ket").hide();
+          }
+        });
+      });
+      function teksarea(x) {
+        if (x == 0) document.getElementById("teksarea").style.display = "block";
+        else document.getElementById("teksarea").style.display = "none";
+        return;
+      }
+    </script>
   </head>
   <body>
     <!-- Form -->
@@ -14,14 +32,27 @@
       <div class="inputfield">
         <label>Pekerjaan yang dilakukan oleh Bapak: </label>
         <br />
-        <input type="text" class="input" />
+        <input type="radio" name="subject" onclick="teksarea(1)" /> Tani<br />
+        <input type="radio" name="subject" onclick="teksarea(1)" /> Ternak<br />
+        <input type="radio" name="subject" onclick="teksarea(1)" /> Nelayan<br />
+        <input type="radio" name="subject" onclick="teksarea(1)" /> PNS<br />
+        <input type="radio" name="subject" onclick="teksarea(0)" /> Lainnya<br />
+        <div>
+          <textarea name="initeksarea" id="teksarea" placeholder="masukkan pekerjaan anda..."> </textarea>
+        </div>
       </div>
       <!-- Akhir X1.4 -->
       <!-- X1.18 -->
       <div class="inputfield">
         <label>Jenis dan jumlah ternak yang diusahakan: </label>
         <br />
-        <input type="text" class="input" />
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="radio" class="checkme" /> Ada</label>
+          </div>
+          <div class="ket"><input type="number" name="informasi" placeholder="jumlah..." \ /> ekor</div>
+        </div>
+        <input type="radio" class="input" /> Tidak Ada
       </div>
       <!-- Akhir X1.18 -->
       <!-- X1.19 -->
@@ -85,10 +116,80 @@
       <div class="inputfield">
         <label> Apakah Bapak/Ibu pernah mencari informasi seputar desa cerdas ? </label>
         <br />
-        <input type="text" class="input" />
       </div>
-      <!-- Akhir X1.38a - b - c - d - e -->
+      <!-- A. CheckBox Aparat Desa -->
+      <div class="checkbox-card">
+        <div class="checkbox">
+          <label> <input type="checkbox" class="checkme" />Aparat Desa</label>
+        </div>
+        <div class="ket">
+          Frekuensi: <br />
+          <input type="number" placeholder="..." class="form-control" /> kali
+          <br />
+          Informasi yang dicari: <br />
+          <textarea name="informasi"></textarea>
+        </div>
+      </div>
+      <!-- Akhir CheckBox Aparat Desa -->
+      <!-- B. CheckBox Tokoh Masyarakat Setempat -->
+      <div class="checkbox-card">
+        <div class="checkbox">
+          <label> <input type="checkbox" class="checkme" />Tokoh Masyarakat Setempat</label>
+        </div>
+        <div class="ket">
+          Frekuensi: <br />
+          <input type="number" placeholder="..." class="form-control" /> kali
+          <br />
+          Informasi yang dicari: <br />
+          <textarea name="informasi"></textarea>
+        </div>
+      </div>
+      <!-- Akhir CheckBox Tokoh Masyarakat Setempat -->
+      <!-- C. CheckBox Pemda Kabupaten ke Kabandungan -->
+      <div class="checkbox-card">
+        <div class="checkbox">
+          <label> <input type="checkbox" class="checkme" />Pemda Kabupaten ke Kabandungan</label>
+        </div>
+        <div class="ket">
+          Frekuensi: <br />
+          <input type="number" placeholder="..." class="form-control" /> kali
+          <br />
+          Informasi yang dicari: <br />
+          <textarea name="informasi"></textarea>
+        </div>
+      </div>
+      <!-- Akhir CheckBox Pemda Kabupaten ke Kabandungan -->
+      <!-- D. CheckBox Pemerintah pusat pada saat kunjungan ke Kabandungan -->
+      <div class="checkbox-card">
+        <div class="checkbox">
+          <label> <input type="checkbox" class="checkme" />Pemerintah pusat pada saat kunjungan ke Kabandungan</label>
+        </div>
+        <div class="ket">
+          Frekuensi: <br />
+          <input type="number" placeholder="..." class="form-control" /> kali
+          <br />
+          Informasi yang dicari: <br />
+          <textarea name="informasi"></textarea>
+        </div>
+      </div>
+      <!-- Akhir CheckBox Pemerintah pusat pada saat kunjungan ke Kabandungan -->
+      <!-- E. CheckBox Lainnya -->
+      <div class="checkbox-card">
+        <div class="checkbox">
+          <label> <input type="checkbox" class="checkme" />Lainnya</label>
+        </div>
+        <div class="ket">
+          Frekuensi: <br />
+          <input type="number" placeholder="..." class="form-control" /> kali
+          <br />
+          Informasi yang dicari: <br />
+          <textarea name="informasi"></textarea>
+        </div>
+      </div>
+      <!-- Akhir CheckBox Lainnya -->
     </div>
+    <!-- Akhir X1.38a - b - c - d - e -->
+
     <!-- Akhir Form -->
     <!-- background -->
     <!-- <svg xmlns="http://www.w3.org/2000/svg" width="594" height="100%" viewBox="0 0 594 1080" fill="none">

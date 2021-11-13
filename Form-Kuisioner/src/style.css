@@ -9,3 +9,11 @@ svg {
     position: absolute;
     top: 0px;
 }
+
+.ket {
+    display: none
+}
+
+#teksarea {
+    display: none;
+}
