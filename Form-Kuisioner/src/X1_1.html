@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X1 Bagian 1</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-latest.min.js"></script>
+    <script>
+      $(function () {
+        $(".checkme").click(function (event) {
+          var x = $(this).is(":checked");
+          if (x == true) {
+            $(this).parents(".checkbox-card").find(".ket").show();
+          } else {
+            $(this).parents(".checkbox-card").find(".ket").hide();
+          }
+        });
+      });
+      function teksarea(x) {
+        if (x == 0) document.getElementById("teksarea").style.display = "block";
+        else document.getElementById("teksarea").style.display = "none";
+        return;
+      }
+    </script>
+  </head>
+  <body>
+    <!-- Form -->
+    <div class="wrapper">
+      <!-- Pertanyaan -->
+      <div class="pertanyaan">
+        <!-- Judul Halamam -->
+        <div class="title">X1 - Bagian 1</div>
+        <!-- Akhir Judul Halaman -->
+        <!-- Kolom Kiri -->
+        <div id="kolom">
+          <!-- X1.4 -->
+          <div class="inputfield">
+            <label>Pekerjaan yang dilakukan oleh Bapak: </label>
+            <br />
+            <input type="radio" name="subject" onclick="teksarea(1)" /> Tani<br />
+            <input type="radio" name="subject" onclick="teksarea(1)" /> Ternak<br />
+            <input type="radio" name="subject" onclick="teksarea(1)" /> Nelayan<br />
+            <input type="radio" name="subject" onclick="teksarea(1)" /> PNS<br />
+            <input type="radio" name="subject" onclick="teksarea(0)" /> Lainnya<br />
+            <div>
+              <textarea name="initeksarea" id="teksarea" placeholder="masukkan pekerjaan anda ..."></textarea>
+            </div>
+          </div>
+          <!-- Akhir X1.4 -->
+          <br /><br />
+          <!-- X1.18 -->
+          <div class="inputfield">
+            <label>Jenis dan jumlah ternak yang diusahakan: </label>
+            <br />
+            <div class="checkbox-card">
+              <div class="checkbox">
+                <label> <input type="radio" class="checkme" /> Ada</label>
+              </div>
+              <div class="ket"><input type="number" name="informasi" placeholder="jumlah..." \ /> ekor</div>
+            </div>
+            <input type="radio" class="input" /> Tidak Ada
+          </div>
+          <!-- Akhir X1.18 -->
+          <br /><br />
+          <!-- X1.19 -->
+          <div class="inputfield">
+            <label>Status kepemilikan ternak: </label>
+            <br />
+            <input type="text" class="input" />
+          </div>
+          <!-- Akhir X1.19 -->
+          <br /><br />
+          <!-- X1.29 -->
+          <div class="inputfield">
+            <label> Pengeluaran oleh Bapak/Ibu dalam satu hari: </label>
+            <br />
+            <input type="text" class="input" />
+          </div>
+          <!-- Akhir X1.29 -->
+          <br /><br />
+          <!-- X1.30 -->
+          <div class="inputfield">
+            <label> Pengeluaran per bulan yang Bapak/Ibu keluarkan: </label>
+            <br />
+            <input type="text" class="input" />
+          </div>
+          <!-- Akhir X1.30 -->
+          <br /><br /><br /><br />
+          <!-- X1.36a - b - d -->
+          <div class="inputfield">
+            <label> Apa motivasi Bapak/Ibu mau berpartisipasi pada Desa Cerdas Kabandungan: </label>
+            <br />
+            a. Sadar akan kebutuhan TIK untuk pengelolaan kegiatan pertanian dan Usaha Mikro Kecil Menengah (UMKM)
+            <br /><input type="radio" name="subject" value="benar" />benar<input type="radio" name="subject" value="tidak" />tidak<br />
+            b. Sadar akan kebutuhan kerjasama dengan pihak bank atau marketplace pertanian
+            <br /><input type="radio" name="subject" value="benar" />benar<input type="radio" name="subject" value="tidak" />tidak<br />
+            c. Tahu bahwa direncanakan akan dikembangkan lokasi pariwisata di Kabandungan
+            <br /><input type="radio" name="subject" value="benar" />benar<input type="radio" name="subject" value="tidak" />tidak<br />
+          </div>
+          <!-- Akhir X1.36a - b - d -->
+          <br /><br />
+          <!-- X1.39b - c -->
+          <div class="inputfield">
+            <label> Berdasarkan pengalaman Bapak/Ibu, apakah pemanfaatan TIK bisa digunakan untuk melakukan kegiatan berikut: </label>
+            <br />
+            a. Membuka lapangan pekerjaan di desa
+            <br /><input type="radio" name="subject" value="bisa" />bisa<input type="radio" name="subject" value="tidak bisa" />tidak bisa<br />
+            b. Menambah penghasilan
+            <br /><input type="radio" name="subject" value="bisa" />bisa<input type="radio" name="subject" value="tidak bisa" />tidak bisa<br />
+            c. Memberdayakan warga desa
+            <br /><input type="radio" name="subject" value="bisa" />bisa<input type="radio" name="subject" value="tidak bisa" />tidak bisa<br />
+          </div>
+          <!-- Akhir X1.39b - c -->
+        </div>
+        <!-- Akhir Kolom Kiri -->
+      </div>
+      <!-- Akhir Pertanyaan -->
+    </div>
+    <!-- Akhir Form -->
+  </body>
+</html>

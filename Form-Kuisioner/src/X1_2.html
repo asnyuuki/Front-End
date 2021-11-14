@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>X1 Bagian 2</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="jquery-latest.min.js"></script>
+    <script>
+      $(function () {
+        $(".checkme").click(function (event) {
+          var x = $(this).is(":checked");
+          if (x == true) {
+            $(this).parents(".checkbox-card").find(".ket").show();
+          } else {
+            $(this).parents(".checkbox-card").find(".ket").hide();
+          }
+        });
+      });
+    </script>
+  </head>
+  <body>
+    <!-- Form -->
+    <div class="form">
+      <!-- Pertanyaan -->
+      <div class="pertanyaan">
+        <!-- Judul Halamam -->
+        <div class="title">X1 - Bagian 2</div>
+        <!-- Akhir Judul Halaman -->
+        <!-- X1.39 d - e - f - g -->
+        <div class="inputfield">
+          d. Mendatangkan orang luar desa berkunjung ke desa
+          <br /><input type="radio" name="subject" value="bisa" />bisa<input type="radio" name="subject" value="tidak bisa" />tidak bisa<br />
+          e. Membuka akses pasar
+          <br /><input type="radio" name="subject" value="bisa" />bisa<input type="radio" name="subject" value="tidak bisa" />tidak bisa<br />
+        </div>
+        <!-- Akhir X1.39 d - e - f - g -->
+        <!-- X1.41 -->
+        <div class="inputfield">
+          <label> Sejak tahun berapa Bapak/Ibu menggunakan TIK, smartphone, dan media sosial? </label>
+          <br /><input type="number" class="input" placeholder=".... tahun" /> Tahun <br />
+          Alasan
+          <br /><textarea name="alasan"></textarea><br />
+        </div>
+        <!-- Akhir X1.41 -->
+        <!-- X1.38a - b - c - d - e -->
+        <div class="inputfield">
+          <label> Apakah Bapak/Ibu pernah mencari informasi seputar desa cerdas ? </label>
+          <br />
+        </div>
+        <!-- A. CheckBox Aparat Desa -->
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="checkbox" class="checkme" />Aparat Desa</label>
+          </div>
+          <div class="ket">
+            Frekuensi: <br />
+            <input type="number" placeholder="..." class="form-control" /> kali
+            <br />
+            Informasi yang dicari: <br />
+            <textarea name="informasi"></textarea>
+          </div>
+        </div>
+        <!-- Akhir CheckBox Aparat Desa -->
+        <!-- B. CheckBox Tokoh Masyarakat Setempat -->
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="checkbox" class="checkme" />Tokoh Masyarakat Setempat</label>
+          </div>
+          <div class="ket">
+            Frekuensi: <br />
+            <input type="number" placeholder="..." class="form-control" /> kali
+            <br />
+            Informasi yang dicari: <br />
+            <textarea name="informasi"></textarea>
+          </div>
+        </div>
+        <!-- Akhir CheckBox Tokoh Masyarakat Setempat -->
+        <!-- C. CheckBox Pemda Kabupaten ke Kabandungan -->
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="checkbox" class="checkme" />Pemda Kabupaten ke Kabandungan</label>
+          </div>
+          <div class="ket">
+            Frekuensi: <br />
+            <input type="number" placeholder="..." class="form-control" /> kali
+            <br />
+            Informasi yang dicari: <br />
+            <textarea name="informasi"></textarea>
+          </div>
+        </div>
+        <!-- Akhir CheckBox Pemda Kabupaten ke Kabandungan -->
+        <!-- D. CheckBox Pemerintah pusat pada saat kunjungan ke Kabandungan -->
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="checkbox" class="checkme" />Pemerintah pusat pada saat kunjungan ke Kabandungan</label>
+          </div>
+          <div class="ket">
+            Frekuensi: <br />
+            <input type="number" placeholder="..." class="form-control" /> kali
+            <br />
+            Informasi yang dicari: <br />
+            <textarea name="informasi"></textarea>
+          </div>
+        </div>
+        <!-- Akhir CheckBox Pemerintah pusat pada saat kunjungan ke Kabandungan -->
+        <!-- E. CheckBox Lainnya -->
+        <div class="checkbox-card">
+          <div class="checkbox">
+            <label> <input type="checkbox" class="checkme" />Lainnya</label>
+          </div>
+          <div class="ket">
+            Frekuensi: <br />
+            <input type="number" placeholder="..." class="form-control" /> kali
+            <br />
+            Informasi yang dicari: <br />
+            <textarea name="informasi"></textarea>
+          </div>
+        </div>
+        <!-- Akhir CheckBox Lainnya -->
+        <!-- Akhir X1.38a - b - c - d - e -->
+      </div>
+      <!-- Akhir Pertanyaan -->
+    </div>
+    <!-- Akhir Form -->
+  </body>
+</html>
