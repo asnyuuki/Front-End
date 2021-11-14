@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300;400;500;700&display=swap');
 
 body {
     max-width: 1920px;
@@ -22,6 +22,7 @@ body {
 
 .wrapper .pertanyaan .title {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 700;
     font-size: 50px;
     color: #406F91;
     border-bottom: 1px solid #4242427c;
@@ -29,18 +30,33 @@ body {
 
 .inputfield {
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
     font-size: 22px;
     color: #406F91;
     padding-right: 50px;
 }
 
+ol,
+li {
+    list-style: lower-alpha;
+    float: left;
+}
+
+.opsi {
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
+    column-count: 2;
+}
+
 .inputfield input[type="text"],
+.inputfield input[type="number"],
 .inputfield textarea {
     background-color: rgba(255, 255, 255, 0);
     border: none;
     border-bottom: 1px solid #4242427c;
     color: #406F91;
     font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
     font-size: 20px;
     width: 100%;
 }
@@ -50,20 +66,51 @@ body {
 }
 
 .inputfield input[type="text"]:focus,
+.inputfield input[type="number"]:focus,
 .inputfield textarea:focus {
     border-bottom: 1px solid #406F91;
     outline: none;
 }
 
 #kolom {
-    margin: 25px auto;
+    margin: 60px auto;
     column-count: 2;
 }
 
-.ket {
+#ket {
     display: none
+}
+
+#status {
+    display: none;
 }
 
 #teksarea {
     display: none;
+}
+
+#input {
+    font-weight: 500;
+}
+
+#continue {
+    float: right;
+    margin-bottom: 10%;
+    border: 0px;
+    border-radius: 15px;
+    background-color: #406F91;
+    color: white;
+    height: 59px;
+    width: 180px;
+    left: 1578px;
+    top: 966px;
+    font-size: 25px;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#continue:hover {
+    background-color: rgba(189, 189, 189, 0.685);
+    color: #406F91;
 }
